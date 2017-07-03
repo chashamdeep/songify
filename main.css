@@ -1,0 +1,321 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    border: 0;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #BBB;
+}
+
+.welcome-screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.main header {
+    height: 80px;
+    background-color: #282828;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.main .content {
+    flex:1;
+    background-color: #1f1f1f;
+}
+
+.main footer {
+    height: 80px;
+    background-color: #282828;
+    padding-top: 1rem;
+}
+
+.player-buttons {
+    display:flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.right.floated {
+    float: right;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.progress-wrapper {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-wrapper span {
+    color: #959595;
+}
+
+.player-progress {
+    height: 8px;
+    width: 700px;
+    background-color: #3d3d3d;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.progress-filled {
+    background-color: #959595;
+    height: 8px;
+    border-radius: 4px;
+    width: 0;
+
+}
+
+.main .content {
+    width: 800px;
+    margin: 2rem auto;
+}
+
+.list-headers {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.list-headers > div {
+    width: 150px;
+    display: inline-block;
+}
+
+.list-headers > div:first-child {
+    width: 330px;
+}
+
+.list-headers > div:last-child {
+    text-align: right;
+}
+
+.song-list .song {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.song > span {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 1rem;
+}
+.song > span:first-child {
+    width: 330px;
+}
+
+.song .song-duration {
+    text-align: right;
+}
+
+.song-list .song:hover {
+    background-color: #282828;
+}
+
+
+.song-length {
+    text-align: right;
+}
+
+/**** Piano *****/
+.pianoCtn {
+    height:auto;
+    width:auto;
+    text-align: center;
+    font-size:20px;
+    font-family: Arial,helvetica,sans-serif;
+    background:#111;
+    padding:10px;
+    border-radius: 6px;
+}
+.piano {
+    height:220px;
+    width:auto;
+    margin:0 auto;
+    border-radius:7px;
+}
+
+.PianoKeys {
+    border:1px solid #888;
+    height:100%;
+    width:auto;
+    position: relative;
+}
+
+.Pkey {
+    border-right:1px solid #bbb;
+    height:100%;
+    width:4.76190476%;
+    position:relative;
+    text-align: center;
+    float:left;
+    font-family: Arial,helvetica,sans-serif;
+    font-size:13px;
+    background:white;
+    color:#333;
+    font-weight: bold;
+}
+.Pkey:last-child {
+    border-right:0;
+}
+
+.Pkey kbd,.SmallKeys kbd {
+    position:absolute;    
+    bottom:50px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.Pkey span, .SmallKeys span {
+    position: absolute;
+    border:0px solid black;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.SmallKeysCtn {
+    border:0px solid black;
+    height:100px;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    color:black;
+
+}
+
+.SmallKeys {
+    border:0px solid black;
+    height:100%;
+    width:4%;
+    position:absolute;
+    text-align: center;
+    font-family: Arial,helvetica,sans-serif;
+    font-size:12px;
+    background:#111;
+    color:white;
+    
+    border-radius:0 0 3px 3px;
+    box-shadow: 1px 1px 0px 1px rgba(50,50,50,.7),
+    2px 2px 0px 1px rgba(20,20,20,.7),
+     3px 3px 0px 1px rgba(50,50,50,.7);
+}
+
+.firstsm {    
+    left:2.38095238095%;
+}
+
+.secondsm {
+    left:7.455%;
+}
+
+.Thirdsm {
+    left:17.0476%;
+}
+
+.Foursm {
+    left:22.1216%; /*1.074*/
+}
+
+.Fifthsm {
+    left:27.1956%;
+}
+
+.sixsm {
+    left:35.714248%;
+}
+
+.sevsm {
+    left:40.788248%;
+}
+
+.eigsm {
+    left:49.9944477%;
+}
+
+.ninsm {
+    left:55.06844%;
+}
+
+.tensm {
+    left:60.142447%;
+}
+
+.elesm {
+    left:69.04755%;
+}
+
+.twesm {
+    left:74.12155%;
+}
+
+.thirsm {
+    left:83.33342%;
+}
+
+.fourtsm {
+    left:88.4082%;
+}
+
+.fiftsm {
+    left:93.4822%;
+}
+
+.playing {
+    background:rgba(200,200,200,1);
+    transition:all .5s;
+    box-shadow:inset 0px 0px 15px 15px rgba(230,230,230,.6);
+}
+
+.keys {
+ transition:all .5s;   
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Song App</title>
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	
+    <div class="wrapper">
+        <section class="welcome-screen hidden">
+            <h1> Welcome to Songify </h1>
+            <h3> Enter name to access your account </h3>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Name" id="name-input">
+                <button> Go </button>
+            </div>
+        </section>
+        <div class="main">
+            <header>
+                <div class="right floated user-name"> </div>
+            </header>
+            <section class="content">
+                <audio src="song1.mp3"></audio>
+                <div class="list-headers">
+				<div> Title </div> 
+				<div> Artist </div>
+				<div> Album </div>
+				<div> Duration </div>
+            </div>
+        <div class="song-list">
+<!--         <span class="song-name"></span>
+        <span class="song-artist"></span>
+        <span class="song-album"></span>
+        <span class="song-length"></span> -->
+		<div class="song" id="song1" >
+		<span class="song-name"> </span>
+		</div>
+		<div class="song" id="song2">
+		<span class="song-name"> </span>
+		</div>
+		<div class="song" id="song3">
+		<span class="song-name"> </span>
+		</div>
+		<div class="song"  id="song4">
+		<span class="song-name"> </span>
+		</div>	
+        </div>
+        <div class="pianoCtn">
+        	<h2>Piano</h2>
+	        <div class="piano">
+	        	<div class="PianoKeys">
+	        		<div data-key="81" class="Pkey keys">
+	        			<kbd>Q</kbd>
+	        			<span class="sound">C3</span>
+	        		</div>
+	        		<div data-key="87" class="Pkey keys">
+	        			<kbd>W</kbd>
+	        			<span class="sound">D3</span>
+	        		</div>
+	        		<div data-key="69" class="Pkey keys">
+	        			<kbd>E</kbd>
+	        			<span class="sound">E3</span>
+	        		</div>
+	        		<div data-key="82" class="Pkey keys">
+	        			<kbd>R</kbd>
+	        			<span class="sound">F3</span>
+	        		</div>
+	        		<div data-key="84" class="Pkey keys">
+	        			<kbd>T</kbd>
+	        			<span class="sound">G3</span>
+	        		</div>
+	        		<div data-key="89" class="Pkey keys">
+	        			<kbd>Y</kbd>
+	        			<span class="sound">A3</span>
+	        		</div>
+	        		<div data-key="85" class="Pkey keys">
+	        			<kbd>U</kbd>
+	        			<span class="sound">B3</span>
+	        		</div>
+	        		<div data-key="73" class="Pkey keys">
+	        			<kbd>I</kbd>
+	        			<span class="sound">C4</span>
+	        		</div>
+	        		<div data-key="79" class="Pkey keys">
+	        			<kbd>O</kbd>
+	        			<span class="sound">D4</span>
+	        		</div>
+	        		<div data-key="80" class="Pkey keys">
+	        			<kbd>P</kbd>
+	        			<span class="sound">E4</span>
+	        		</div>
+	        		<div data-key="219" class="Pkey keys">
+	        			<kbd>[</kbd>
+	        			<span class="sound">F4</span>
+	        		</div>
+	        		<div data-key="221" class="Pkey keys">
+	        			<kbd>]</kbd>
+	        			<span class="sound">G4</span>
+	        		</div>
+	        		<div data-key="90" class="Pkey keys">
+	        			<kbd>Z</kbd>
+	        			<span class="sound">A4</span>
+	        		</div>
+	        		<div data-key="88" class="Pkey keys">
+	        			<kbd>X</kbd>
+	        			<span class="sound">B4</span>
+	        		</div>
+	        		<div data-key="67" class="Pkey keys">
+	        			<kbd>C</kbd>
+	        			<span class="sound">C5</span>
+	        		</div>
+	        		<div data-key="86" class="Pkey keys">
+	        			<kbd>V</kbd>
+	        			<span class="sound">D5</span>
+	        		</div>
+	        		<div data-key="66" class="Pkey keys">
+	        			<kbd>B</kbd>
+	        			<span class="sound">E5</span>
+	        		</div>
+	        		<div data-key="78" class="Pkey keys">
+	        			<kbd>N</kbd>
+	        			<span class="sound">F5</span>
+	        		</div>
+	        		<div data-key="77" class="Pkey keys">
+	        			<kbd>M</kbd>
+	        			<span class="sound">G5</span>
+	        		</div>
+	        		<div data-key="188" class="Pkey keys">
+	        			<kbd>,</kbd>
+	        			<span class="sound">A5</span>
+	        		</div>
+	        		<div data-key="190" class="Pkey keys">
+	        			<kbd>.</kbd>
+	        			<span class="sound">B5</span>
+	        		</div>
+
+					<div class="SmallKeysCtn">
+					
+		        		<div class="SmallKeys firstsm keys" data-key="50">
+		        			<kbd>2</kbd>
+		        			<span class="sound">C3#</span>
+		        		</div>
+		        		<div class="SmallKeys secondsm keys" data-key="51">
+		        			<kbd>3</kbd>
+		        			<span class="sound">D3#</span>
+		        		</div>			        			        		
+		        		<div class="SmallKeys Thirdsm keys" data-key="53">
+		        			<kbd>5</kbd>
+		        			<span class="sound">F3#</span>
+		        		</div>
+		        		<div class="SmallKeys Foursm keys" data-key="54">
+		        			<kbd>6</kbd>
+		        			<span class="sound">G3#</span>
+		        		</div>
+		        		<div class="SmallKeys Fifthsm  keys" data-key="55">
+		        			<kbd>7</kbd>
+		        			<span class="sound">A3#</span>
+		        		</div>					
+		        		<div class="SmallKeys sixsm keys" data-key="57">
+		        			<kbd>9</kbd>
+		        			<span class="sound">C4#</span>
+		        		</div>
+		        		<div class="SmallKeys sevsm keys" data-key="48">
+		        			<kbd>0</kbd>
+		        			<span class="sound">D4#</span>
+		        		</div>
+		        		<div class="SmallKeys eigsm keys" data-key="187">
+		        			<kbd>=</kbd>
+		        			<span class="sound">F4#</span>
+		        		</div>
+		        		<div class="SmallKeys ninsm keys" data-key="65">
+		        			<kbd>A</kbd>
+		        			<span class="sound">G4#</span>
+		        		</div>
+		        		<div class="SmallKeys tensm keys" data-key="83">
+		        			<kbd>S</kbd>
+		        			<span class="sound">A4#</span>
+		        		</div>
+		        		<div class="SmallKeys elesm keys" data-key="70">
+		        			<kbd>F</kbd>
+		        			<span class="sound">C5#</span>
+		        		</div>
+		        		<div class="SmallKeys twesm keys" data-key="71">
+		        			<kbd>G</kbd>
+		        			<span class="sound">D5#</span>
+		        		</div>
+		        		<div class="SmallKeys thirsm keys" data-key="74">
+		        			<kbd>J</kbd>
+		        			<span class="sound">F5#</span>
+		        		</div>
+		        		<div class="SmallKeys fourtsm keys" data-key="75">
+		        			<kbd>K</kbd>
+		        			<span class="sound">G5#</span>
+		        		</div>	        		
+		        		<div class="SmallKeys fiftsm keys" data-key="76">
+		        			<kbd>L</kbd>
+		        			<span class="sound">A5#</span>
+		        		</div>
+	        		</div>
+	        		
+	        	</div>        	
+	        </div>
+        </div>        
+        </section>
+            <footer>
+                <div class="controls">
+                    <div class="player-buttons">
+                        <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="progress-wrapper">
+                        <span class="time-elapsed"> </span>
+                        <div class="player-progress">
+                            <div class="progress-filled"> </div>
+                        </div>
+                        <span class="song-duration"></span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+       <div id="graph"></div>
+
+       <audio id="audioElement" >
+       		<source src="song2.mp3" type="audio/mp3" />
+       </audio>      
+		<div>
+		  <button onclick="document.getElementById('audioElement').play()">Play the Audio</button>
+		  <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>		  
+		</div>
+	  <script src="jquery.js">
+    </script>	  
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="audiosynth.js">
+    </script>
+    <script>
+		Synth instanceof AudioSynth; // true
+
+		var testInstance = new AudioSynth;
+		testInstance instanceof AudioSynth; // true
+		testInstance === Synth; // true
+
+		window.addEventListener('keydown', function (e) {
+
+			var c=document.querySelector("div.keys[data-key='" + e.keyCode + "']");			
+
+			if(!c) return;			
+
+			//Array of KeyCodes which use for finding the Music Code in next Array
+			var arr= [81,87,69,82,84,89,85,73,79,80,219,221,90,88,67,86,66,78,77,188,190,50,51,53,54,55,57,48,187,65,83,70,71,74,75,76];
+
+			//Music Code Array
+			var va = ["C3","D3","E3","F3","G3","A3","B3","C4","D4","E4","F4","G4","A4","B4","C5","D5","E5","F5","G5","A5","B5","C3#","D3#","F3#","G3#","A3#","C4#","D4#","F4#","G4#","A4#","C5#","D5#","F5#","G5#","A5#"];
+			
+				
+
+			var indices = [];			//Empty Array
+			var element = e.keyCode; 	//Pressed Key Code
+
+			var idx = arr.indexOf(element);	//Checking existence of keyCode in arr Array
+
+			//Finding the Index of keyCode in arr Array
+			while (idx != -1) {
+  				indices.push(idx);
+  				idx = arr.indexOf(element, idx + 1);
+			}			
+
+			// First find the index of music code with corresponden to keyCode index and then Split. For example -  KeyCode is 87 index of 1 in arr then in va index of 1 is D3 which is after split is ["D","3"]
+			var splits = va[indices].split('');
+
+			var length = splits.length;  	//length of arr;
+
+	//var piano = Synth.createInstrument('piano');
+			c.classList.add('playing');
+			if(length <= 2) { // if the Music Code are at high level for eg - D3,A3, C4
+				Synth.play('piano', splits[0] , splits[1], '3');
+				//piano.play(splits[0],splits[1],'2');
+			} else if(length > 2) { // if the Music Code are at low level for eg - G3#,A3#	
+				Synth.play('piano', splits[0] +  splits[2],splits[1]);			
+				//piano.play(splits[0]	,splits[1] +  splits[2],'1');
+			}			
+		});
+		
+		 function removeTransition (e) {		 		
+		 		
+		 		console.log(e.propertyName);
+		 		this.classList.remove('playing');
+		 }
+		var keysend=document.querySelectorAll("div.keys");
+
+		keysend.forEach(key => key.addEventListener('transitionend',removeTransition));
+
+    </script>
+
+
+	
+	<script >
+	  			var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+			audioCtx.crossOrigin = 'anonymous';
+				var audioElement = document.getElementById('audioElement');
+				var audioSrc = audioCtx.createMediaElementSource(audioElement);
+				var analyser = audioCtx.createAnalyser();
+	
+				// Bind our analyser to the media element source.
+				audioSrc.connect(analyser);
+				audioSrc.connect(audioCtx.destination);
+
+	  		$(document).ready(function() {
+
+	  			
+
+	  			var frequencyData = new Uint8Array(200);
+
+				var svgHeight = '300';
+				var svgWidth = '1200';
+				var barPadding = '1';
+
+				function createSvg(parent, height, width) {
+				  return d3.select(parent).append('svg').attr('height', height).attr('width', width);
+				}
+
+				var svg = createSvg('body', svgHeight, svgWidth);
+
+				// Create our initial D3 chart.
+				svg.selectAll('rect')
+				   .data(frequencyData)
+				   .enter()
+				   .append('rect')
+				   .attr('x', function (d, i) {
+				      return i * (svgWidth / frequencyData.length);
+				   })
+				   .attr('width', svgWidth / frequencyData.length - barPadding);
+
+
+				function renderChart() {
+					   requestAnimationFrame(renderChart);
+
+					   // Copy frequency data to frequencyData array.
+					   analyser.getByteFrequencyData(frequencyData);
+
+					   // Update d3 chart with new data.
+					   svg.selectAll('rect')
+					      .data(frequencyData)
+					      .attr('y', function(d) {
+					         return svgHeight - d;
+					      })
+					      .attr('height', function(d) {
+					         return d;
+					      })
+					      .attr('fill', function(d) {
+					         return 'rgb(255, 10, ' + d + ')';
+					      });
+					}
+
+				// Run the loop
+				renderChart();
+
+	  		});
+
+	  </script>
+  
+    <script>
+    $('.welcome-screen button').on('click', function() {
+        var name = $('#name-input').val();
+        if (name.length > 2) {
+            var message = "Welcome, " + name;
+            $('.main .user-name').text(message);
+            $('.welcome-screen').addClass('hidden');
+            $('.main').removeClass('hidden');
+        } else {
+            $('#name-input').addClass('error');
+        }
+    });
+	function toggleSong(){           //play and pause the song
+		var song = document.querySelector('audio');
+		if (song.paused == true) {
+				$('.play-icon').removeClass('fa-play').addClass('fa-pause');
+				song.play();
+		}
+		else {
+		     $('.play-icon').removeClass('fa-pause').addClass('fa-play');
+			 song.pause();
+			 }
+	}
+	$('.play-icon').on('click',function(){
+	    toggleSong();
+	});
+    $('body').on('keypress', function(event) {
+                if (event.keyCode == 32) {
+                    toggleSong();
+                }
+            });
+ function fancyTimeFormat(time) //function for displaying duration of song in proper format
+   {   
+    // Hours, minutes and seconds
+    var hrs = ~~(time / 3600);
+    var mins = ~~((time % 3600) / 60);
+    var secs = time % 60;
+
+    // Output like "1:01" or "4:03:59" or "123:03:59"
+    var ret = "";
+
+    if (hrs > 0) {
+        ret += "" + hrs + ":" + (mins < 10 ? "0" : "");
+    }
+
+    ret += "" + mins + ":" + (secs < 10 ? "0" : "");
+    ret += "" + secs;
+    return ret;
+    }
+	function updateCurrentTime() {        //function for displaying song duration 
+		var song = document.querySelector('audio');
+		var currentTime=Math.floor(song.currentTime); //remove decimal value
+		currentTime= fancyTimeFormat(currentTime);   //makes the time format fancy
+		var duration=Math.floor(song.duration);
+		duration = fancyTimeFormat(duration);
+		$('.time-elapsed').text(currentTime);
+		$('.song-duration').text(duration);
+	}
+
+	window.onload = function() {
+	setInterval(function(){    
+	updateCurrentTime()
+	},1000);
+	var songList = ['Tu premi Mn premi',
+	'Humma Song', 'Nashe Si Chadh Gayi', 'The Breakup Song'];   //Array storing name of the songs
+	$('#song1 .song-name').text(songList[0]);    
+	$('#song2 .song-name').text(songList[1]);
+	$('#song3 .song-name').text(songList[2]);
+	$('#song4 .song-name').text(songList[3]);
+	}
+	var fileNames = ['song1.mp3','song2.mp3','song3.mp3','song4.mp3']; //Array storing src or fileNames of the songs
+	$('#song1').click(function() {
+	var audio = document.querySelector('audio');
+	var currentSong = audio.src; 
+	if(currentSong.search(fileNames[0]) != -1)  //search if the current song is euals to the song clicked
+	{
+	toggleSong();                        //play the song
+	}
+	else {    // else changes the src with the src of the song clicked by the user
+	audio.src = fileNames[0];     
+	toggleSong();
+	}
+	});
+	$('#song2').click(function() {
+	var audio = document.querySelector('audio');
+	var currentSong = audio.src; 
+	if(currentSong.search(fileNames[1]) != -1)  //search if the current song is euals to the song clicked
+	{
+	toggleSong();                        //play the song
+	}
+	else {    // else changes the src with the src of the song clicked by the user
+	audio.src = fileNames[1];     
+	toggleSong();
+	}
+	});
+
+	$('#song3').click(function() {
+	var audio = document.querySelector('audio');
+	var currentSong = audio.src; 
+	if(currentSong.search(fileNames[2]) != -1)  //search if the current song is euals to the song clicked
+	{
+	toggleSong();                        //play the song
+	}
+	else {    // else changes the src with the src of the song clicked by the user
+	audio.src = fileNames[2];     
+	toggleSong();
+	}
+	});
+
+	$('#song4').click(function() {
+	var audio = document.querySelector('audio');
+	var currentSong = audio.src; 
+	if(currentSong.search(fileNames[3]) != -1)  //search if the current song is euals to the song clicked
+	{
+	toggleSong();                        //play the song
+	}
+	else {    // else changes the src with the src of the song clicked by the user
+	audio.src = fileNames[3];     
+	toggleSong();
+	}
+	});
+    </script>
+</body>
+
+</html>
